@@ -14,19 +14,22 @@ Health plans are required to keep provider directories accurate. CMS national re
 
 ## Methodology
 
-1. Pulled 200 provider records from the NPPES API for a single metro area using Power Query in Excel.
-2. Created a duplicate dataset to represent the directory output, and introduced errors into approximately 15-20% of records across five fields: phone number, address, specialty, network status, and patient acceptance status.
+1. Pulled 200 individual provider records (NPI-1) from the NPPES API for the Orlando, FL metro area.
+2. Created a duplicate dataset to represent the directory output, and introduced errors into 18% of records across five fields: phone number, address, specialty, network status, and patient acceptance status.
 3. Used XLOOKUP to match records between the two tables on NPI (National Provider Identifier), the unique ID assigned to every provider, and built comparison columns to flag mismatches field by field.
-4. Applied conditional formatting to visually flag every discrepancy, and summarized results using a pivot table.
+4. Applied conditional formatting to visually flag every discrepancy, and quantified results on a formula-driven Summary sheet benchmarked against CMS audit findings.
 5. Brought the cleaned data into Power BI to build a two page report: an executive summary view and an operational work queue view.
 
 ## Key Findings
 
-[To be filled in once analysis is complete]
+- 36 of 200 provider records (18.0%) contained at least one discrepancy, with 41 field-level errors in total.
+- Phone numbers were the most common error (12 records), consistent with CMS audit findings, followed by addresses (9), patient acceptance status (9), specialty listings (6), and network status (5).
+- Record-level accuracy of 82.0% outperforms the ~51% CMS national benchmark, but still fails a zero-tolerance standard: at this error rate, a 10,000-provider directory would carry roughly 1,800 inaccurate listings.
+- Under the No Surprises Act two-business-day update requirement, the 36 flagged records form the operational work queue, prioritized by member impact (phone and address errors first, since they directly block members from reaching care).
 
 ## Tools Used
 
-Excel (Power Query, XLOOKUP, pivot tables, conditional formatting), Power BI (Power Query, star schema modeling, DAX)
+Excel (NPPES API data pull, XLOOKUP, conditional formatting, formula-driven audit summary), Power BI (Power Query, star schema modeling, DAX)
 
 ## Files
 
