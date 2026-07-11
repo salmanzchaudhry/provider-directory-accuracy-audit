@@ -33,5 +33,5 @@ Excel (NPPES API data pull, XLOOKUP, conditional formatting, formula-driven audi
 
 ## Files
 
-- Provider_Directory_Audit.xlsx
-- Provider_Directory_Audit.pbix
+- [Provider_Directory_Audit.xlsx](Provider_Directory_Audit.xlsx) — source data, directory output, XLOOKUP audit, and summary (download and open in Excel)
+- Provider_Directory_Audit.pbix — Power BI report (in progress)
