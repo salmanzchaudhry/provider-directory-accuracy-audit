@@ -24,7 +24,7 @@ Health plans are required to keep provider directories accurate. CMS national re
 
 - 36 of 200 provider records (18.0%) contained at least one discrepancy, with 41 field-level errors in total.
 - Phone numbers were the most common error (12 records), consistent with CMS audit findings, followed by addresses (9), patient acceptance status (9), specialty listings (6), and network status (5).
-- Record-level accuracy of 82.0% outperforms the ~51% CMS national benchmark, but still fails a zero-tolerance standard: at this error rate, a 10,000-provider directory would carry roughly 1,800 inaccurate listings.
+- Record-level accuracy of 82.0% is well above the industry baseline observed in CMS's national directory audits (roughly half of locations had at least one inaccuracy), but that baseline is an observed error rate, not a compliance target: directory accuracy is effectively zero-tolerance under the No Surprises Act, and at this error rate a 10,000-provider directory would still carry roughly 1,800 inaccurate listings.
 - Under the No Surprises Act two-business-day update requirement, the 36 flagged records form the operational work queue in the Power BI report, prioritized by a weighted risk score: network status errors rank highest (a false in-network listing triggers No Surprises Act cost-sharing liability for the plan), followed by phone and address errors (which block members from reaching care), then acceptance and specialty listing errors.
 
 ## Report Preview
