@@ -4,7 +4,7 @@ An Excel and Power BI project that reconciles provider source data against a sim
 
 ## Why This Matters
 
-Health plans are required to keep provider directories accurate. CMS national reviews have found that roughly half of provider directory locations contain at least one inaccuracy, most commonly wrong phone numbers, incorrect addresses, or outdated patient acceptance status. Under the No Surprises Act, plans must verify every provider record at least once every 90 days and process updates within two business days. This project simulates that reconciliation process, comparing a provider source dataset against a directory output to identify discrepancies and measure accuracy against industry compliance benchmarks.
+Health plans are required to keep provider directories accurate. CMS national reviews have found that roughly half of provider directory locations contain at least one inaccuracy, most commonly wrong phone numbers, incorrect addresses, or outdated patient acceptance status. Under the No Surprises Act, plans must verify every provider record at least once every 90 days and process updates within two business days. This project simulates that reconciliation process, comparing a provider source dataset against a directory output to identify discrepancies and measure accuracy against the error rates CMS has observed in its national directory audits.
 
 ## Data Sources
 
@@ -29,7 +29,7 @@ Health plans are required to keep provider directories accurate. CMS national re
 
 ## Report Preview
 
-**Executive Summary** — KPIs, errors by field, and inaccuracy rate vs the CMS national benchmark:
+**Executive Summary** — KPIs, errors by field, and inaccuracy rate vs CMS national audit findings:
 
 ![Executive Summary page](images/executive-summary.png)
 
