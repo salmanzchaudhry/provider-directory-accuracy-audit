@@ -27,6 +27,16 @@ Health plans are required to keep provider directories accurate. CMS national re
 - Record-level accuracy of 82.0% outperforms the ~51% CMS national benchmark, but still fails a zero-tolerance standard: at this error rate, a 10,000-provider directory would carry roughly 1,800 inaccurate listings.
 - Under the No Surprises Act two-business-day update requirement, the 36 flagged records form the operational work queue in the Power BI report, prioritized by a weighted risk score: network status errors rank highest (a false in-network listing triggers No Surprises Act cost-sharing liability for the plan), followed by phone and address errors (which block members from reaching care), then acceptance and specialty listing errors.
 
+## Report Preview
+
+**Executive Summary** — KPIs, errors by field, and inaccuracy rate vs the CMS national benchmark:
+
+![Executive Summary page](images/executive-summary.png)
+
+**Operational Work Queue** — flagged records sorted by weighted risk score, with field-level slicers, provider type breakdown, and priority tiers:
+
+![Operational Work Queue page](images/operational-work-queue.png)
+
 ## Tools Used
 
 Excel (NPPES API data pull, XLOOKUP, conditional formatting, formula-driven audit summary), Power BI (Power Query, star schema modeling, DAX)
